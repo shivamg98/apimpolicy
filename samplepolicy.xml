@@ -1,9 +1,9 @@
 <policies>
     <inbound>
         <validate-jwt header-name="Authorization" failed-validation-httpcode="401" failed-validation-error-message="Unauthorized API Call">
-            <openid-config url="https://login.microsoftonline.com/{{CurrentTenant}}/v2.0/.well-known/openid-configuration" />
+            <openid-config url="https://login.microsoftonline.com/1234-1234-1234-1234/v2.0/.well-known/openid-configuration" />
             <audiences>
-                <audience>{{APIM-APIClientId}}</audience>
+                <audience>1234-1234-1234-1234</audience>
             </audiences>
             <required-claims>
                 <claim name="roles">
